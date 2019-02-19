@@ -7,7 +7,7 @@ using System.Data.Entity;
 
 namespace AdvancedGameList.DAL
 {
-    public class GameInitializer : DropCreateDatabaseAlways<GameContext>
+    public class GameInitializer : DropCreateDatabaseIfModelChanges<GameContext>
     {
         protected override void Seed(GameContext context)
         {

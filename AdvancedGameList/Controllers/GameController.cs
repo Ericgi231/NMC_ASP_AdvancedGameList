@@ -22,6 +22,12 @@ namespace AdvancedGameList.Controllers
             return View(games.ToList());
         }
 
+        // GET: Game
+        public ActionResult Detail()
+        {
+            return View(db.Games.ToList());
+        }
+
         // GET: Game/Details/5
         public ActionResult Details(int? id)
         {
